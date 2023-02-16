@@ -1,0 +1,128 @@
+:root {
+    --headers-color: #212121;
+    --standart-text-color : #757575;
+    --link-hover-color : #2196F3;
+    --minor-background-color:#2F303A;
+    --button-background-color:#F5F4FA;
+  }
+
+  body{
+    color: var(--standart-text-color);
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+  }
+  button{
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+
+  }
+  footer{
+    height: 252px;
+    background-color: var(--minor-background-color);
+   
+  }
+  .headers{
+    color: var(--headers-color);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .advantages .headers{
+    font-size: 14px;
+  
+  }
+  .development-stages .headers{
+    font-size: 36px;
+  
+  }
+  .nav-list .nav-link a{
+    color: var(--headers-color);
+    font-weight:500;
+    font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;  
+  }
+  .nav-link.active-link a{
+    color: var(--link-hover-color);
+  }
+ .main-logo a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: var(--headers-color);
+}
+.logo-part{
+  color: var(--link-hover-color);
+}
+
+  .contacts-list a{
+    font-weight:500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: inherit;
+  }
+  .nav-list a:hover,.nav-list a:focus{
+    color: var(--link-hover-color);
+  }
+  .contacts-list a:hover,.nav-list a:focus{
+    color: var(--link-hover-color);   
+  }
+  .slogan-block{
+    height: 600px;
+    background-color: var(--minor-background-color); 
+    text-align: center;
+    
+  }
+  .slogan-text,.location{
+    color: #fff;
+  }
+  .slogan-text{
+    font-size: 44px;
+    font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  }
+ 
+ .team > .headers{
+  font-size: 36px;
+ }
+ 
+ .profession{
+  font-size: 16px;
+ }
+ .footer .main-logo a{
+  color: #fff;
+ }
+ address a{
+  color: inherit;
+ }
+ .buttons-list .unactive-button {
+  background-color: var(--button-background-color);
+  color: var(--headers-color);
+ }
+ .buttons-list .unactive-button:hover,
+ .buttons-list .unactive-button:focus{    
+  background-color: #2196F3;
+  color: #fff;  
+ }
+.works p{
+ line-height: 1.9;
+}
+
+ .works .headers{
+  font-size: 18px;
+  line-height: 2;
+ }
+
+ 
