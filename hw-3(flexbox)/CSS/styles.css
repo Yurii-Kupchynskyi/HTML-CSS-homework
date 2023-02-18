@@ -1,0 +1,205 @@
+:root {
+    --headers-color: #212121;
+    --standart-text-color : #757575;
+    --link-hover-color : #2196F3;
+    --minor-background-color:#2F303A;
+    --button-background-color:#F5F4FA;
+  }
+
+  body{
+    color: var(--standart-text-color);
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+  }
+  button{
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+
+  }
+  footer{
+    height: 252px;
+    background-color: var(--minor-background-color);
+    /* padding: 0 30px; */
+    
+
+  }
+  .container{
+    width: 1200px;
+    outline: 1px solid black;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 94px;
+  }
+  .headers{
+    color: var(--headers-color);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .advantages .headers{
+    font-size: 14px;
+
+  }
+  .development-stages .headers{
+    font-size: 36px;
+
+  }
+  .nav-list .nav-link a{
+    color: var(--headers-color);
+    font-weight:500;
+    font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  }
+  .nav-link.active-link a{
+    color: var(--link-hover-color);
+  }
+ .main-logo a{
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: var(--headers-color);
+  outline: #bee0d8 dotted 2px;
+  display: inline-block;
+  margin-bottom: 20px;
+
+}
+.logo-part{
+  color: var(--link-hover-color);
+}
+
+  .contacts-list a{
+    font-weight:500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: inherit;
+  }
+  .nav-list a:hover,.nav-list a:focus{
+    color: var(--link-hover-color);
+  }
+  .contacts-list a:hover,.nav-list a:focus{
+    color: var(--link-hover-color);
+  }
+  .slogan-block{
+    height: 600px;
+    background-color: var(--minor-background-color);
+    text-align: center;
+    vertical-align:middle;
+    /* Переробити на FLEX */
+    padding: 200px 900px; 
+    margin-bottom: 94px;
+    
+  }
+  /* .slogan-content{
+    width: 800px;
+    height: 300px;
+    outline: #bee0d8 dotted 2px;
+    text-align: inherit;
+    padding: 0 400px;
+
+  } */
+  .slogan-text,.location{
+    color: #fff;
+
+  }
+  .slogan-text{
+    font-size: 44px;
+    font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  width: 690px;
+  outline: #bee0d8 dotted 2px;
+  text-align: center;
+  }
+
+ .team > .headers{
+  font-size: 36px;
+ }
+
+ .profession{
+  font-size: 16px;
+ }
+ .footer .main-logo a{
+  color: #fff;
+ }
+ address a{
+  color: inherit;
+ }
+.buttons-list button{
+  display: inline-block;
+  height: 38px;
+  padding: 6px 22px;
+
+}
+
+ .buttons-list .unactive-button {
+  background-color: var(--button-background-color);
+  color: var(--headers-color);
+ }
+ .buttons-list .unactive-button:hover,
+ .buttons-list .unactive-button:focus{
+  background-color: #2196F3;
+  color: #fff;
+ }
+.works p{
+ line-height: 1.9;
+}
+
+ .works .headers{
+  font-size: 18px;
+  line-height: 2;
+ }
+
+ .main-button{
+  height: 50px;
+  width: 200px;
+  padding: 10px 20px;
+ }
+ .caption{
+  outline: 1px solid black;
+ }
+ .works img{
+  margin-bottom: 20px;
+ }
+ .team img{
+  margin-bottom: 30px;
+ }
+ /* .works li{
+  border: #2F303A 1px solid;
+ } */
+ .footer-text{
+  display: inline-block;
+  outline: 1px solid rgb(188, 178, 178);
+  margin-left: 215px;
+  margin-top: 60px;
+ }
+ h2.headers{
+  display: inline-block;
+  margin-bottom: 50px;
+  /* outline: #44a18b dotted 2px; */
+ }
+
+ .headers.header-space{
+  outline: 1px solid rgb(36, 138, 106);
+  display: inline-block;
+  margin-bottom: 10px;
+ }
+ .background-container{
+  outline: 1px solid rgb(36, 138, 106);
+  background-color: #F5F4FA;
+ }
+
