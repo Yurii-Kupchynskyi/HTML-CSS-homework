@@ -35,7 +35,7 @@
   }
   .container{
     width: 1230px;
-    /* outline: 1px solid black; */
+    outline: 0px solid black;
     margin: 0 auto;
     padding: 0 15px;
     margin-bottom: 94px;
@@ -69,6 +69,8 @@
     flex-basis: calc((100% - 90px) / 4);
     
   }
+
+
   .development-stages{
   text-align: center;
   }
@@ -83,6 +85,7 @@
   .development-list .item{
     flex-basis: calc((100% - 60px) / 3);
   }
+
 
   .nav-list{
   display: flex;
@@ -147,10 +150,8 @@
     font-size: 14px;
     line-height: 1.3;
     letter-spacing: 0.02em;
-    
-
-
   }
+
   .nav-list a:hover,.nav-list a:focus{
     color: var(--link-hover-color);
   }
@@ -184,8 +185,8 @@
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   }
+
 
   .team{
     text-align: center;
@@ -212,8 +213,24 @@
  address a{
   color: inherit;
  }
+
+.works-filter{
+  padding-top: 94px;
+}
+
+
+.buttons-list{
+  display: flex;
+  justify-content: center;
+  /* column-gap:8px; */
+}
+.buttons-list :not(:last-child)
+{
+  margin-right: 8px;
+}
+
 .buttons-list button{
-  display: inline-block;
+  display: block;
   height: 38px;
   padding: 6px 22px;
 
@@ -228,6 +245,12 @@
   background-color: #2196F3;
   color: #fff;
  }
+
+.works{
+  
+  margin-top: 50px;
+}
+
 .works p{
  line-height: 1.9;
 }
@@ -237,6 +260,17 @@
   line-height: 2;
  }
 
+ .works-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:30px;
+ }
+ .works-list>.item{
+  border: 1px solid #EEEEEE;
+  flex-basis: calc((100% - 90px) / 3);
+ }
+
  .main-button{
   height: 50px;
   width: 200px;
@@ -244,9 +278,17 @@
   margin-top: 30px;
  }
  .caption{
-  outline: 1px solid black;
+  outline: 0px solid black;
+  padding: 0 24px;
+  padding-bottom: 20px; 
+ }
+
+ .caption .headers{
+ 
+  margin-bottom: 4px;
  }
  .works img{
+  display: block;
   margin-bottom: 20px;
  }
  .team img{
@@ -290,3 +332,4 @@
  padding: 12px;
   margin-bottom: 8px;
 }
+
