@@ -17,7 +17,7 @@
   <body>
     <header>
       <!-- Навігація -->
-      <div class="container">
+      <div class="container nav-container">
         <section class="nav-section">
           <nav>
             <ul class="nav-list">
@@ -38,10 +38,12 @@
         <!-- Контактні дані -->
         <section class="contacts">
           <ul class="contacts-list">
-            <li>
+            <li class="item">
               <a href="mailto:webmaster@example.com">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </section>
       </div>
@@ -50,41 +52,40 @@
     <main>
       <!-- Блок рекламної інформації -->
       <div class="slogan-block">
-        <div class="slogan-content">
-          <h1 class="slogan-text">
-            Ефективне рішення <br />
-            для вашого бізнесу
-          </h1>
-          <button type="button" class="main-button">Замовити послугу</button>
-        </div>
+        <h1 class="slogan-text">
+          Ефективне рішення <br />
+          для вашого бізнесу
+        </h1>
+        <br />
+        <button type="button" class="main-button">Замовити послугу</button>
       </div>
 
       <!-- Переваги компанії -->
 
       <div class="container">
         <section class="advantages">
-          <ul>
-            <li>
+          <ul class="advantages-list">
+            <li class="item">
               <h3 class="headers header-space">Увага до деталей</h3>
               <p>
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="headers header-space">Пункуальність</h3>
               <p>
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="headers header-space">Планування</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="headers header-space">Сучасні технології</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -99,22 +100,22 @@
       <div class="container">
         <section class="development-stages">
           <h2 class="headers">Чим ми займаємося</h2>
-          <ul>
-            <li>
+          <ul class="development-list">
+            <li class="item">
               <img
                 src="./images/designing.jpg"
                 alt="Проетування задачі"
                 width="370"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/development.jpg"
                 alt="Робота над задачею"
                 width="370"
               />
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/testing.jpg"
                 alt="Тестування задачі"
@@ -129,8 +130,8 @@
         <div class="container">
           <section class="team">
             <h2 class="headers">Наша команда</h2>
-            <ul>
-              <li>
+            <ul class="team-list">
+              <li class="item">
                 <figure>
                   <img
                     src="./images/person_1.jpg"
@@ -143,7 +144,7 @@
                   </figcaption>
                 </figure>
               </li>
-              <li>
+              <li class="item">
                 <figure>
                   <img
                     src="./images/person_2.jpg"
@@ -156,7 +157,7 @@
                   </figcaption>
                 </figure>
               </li>
-              <li>
+              <li class="item">
                 <figure>
                   <img
                     src="./images/person_3.jpg"
@@ -168,7 +169,7 @@
                     <p class="profession">Marketing</p>
                   </figcaption>
                 </figure>
-              </li>
+              </li class="item">
               <li>
                 <figure>
                   <img
@@ -190,20 +191,22 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div class="footer-text">
-        <h3 class="main-logo">
-          <a href="./index.html"><span class="logo-part">Web</span>Studio</a>
-        </h3>
-        <address>
-          <p class="location">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul>
-            <li>
-              <a href="mailto:webmaster@example.com">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
-      </div>
+      <div class="container">
+        <div class="footer-text">
+          <h3 class="main-logo">
+            <a href="./index.html"><span class="logo-part">Web</span>Studio</a>
+          </h3>
+          <address>
+            <p class="location bottmom-space">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul>
+              <li class="bottmom-space">
+                <a href="mailto:webmaster@example.com">info@devstudio.com</a>
+              </li >
+              <li class="bottmom-space"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+      </div >
     </footer>
   </body>
 </html>

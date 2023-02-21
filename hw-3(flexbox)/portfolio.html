@@ -17,7 +17,7 @@
   <body>
     <header>
       <!-- Навігація -->
-      <div class="container">
+      <div class="container nav-container">
         <section class="nav-section">
           <nav>
             <ul class="nav-list">
@@ -26,10 +26,12 @@
                   ><span class="logo-part">Web</span>Studio</a
                 >
               </li>
-              <li class="nav-link active-link">
+              <li class="nav-link">
                 <a href="./index.html">Студія</a>
               </li>
-              <li class="nav-link"><a href="./portfolio.html">Портфоліо</a></li>
+              <li class="nav-link active-link">
+                <a href="./portfolio.html">Портфоліо</a>
+              </li>
               <li class="nav-link"><a href="">Контакти</a></li>
             </ul>
           </nav>
@@ -38,10 +40,12 @@
         <!-- Контактні дані -->
         <section class="contacts">
           <ul class="contacts-list">
-            <li>
+            <li class="item">
               <a href="mailto:webmaster@example.com">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
           </ul>
         </section>
       </div>
@@ -128,19 +132,25 @@
     </main>
 
     <footer class="footer">
-      <div class="footer-text">
-        <h3 class="main-logo">
-          <a href="./index.html"><span class="logo-part">Web</span>Studio</a>
-        </h3>
-        <address>
-          <p class="location">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul>
-            <li>
-              <a href="mailto:webmaster@example.com">info@devstudio.com</a>
-            </li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
-        </address>
+      <div class="container">
+        <div class="footer-text">
+          <h3 class="main-logo">
+            <a href="./index.html"><span class="logo-part">Web</span>Studio</a>
+          </h3>
+          <address>
+            <p class="location bottmom-space">
+              м. Київ, пр-т Лесі Українки, 26
+            </p>
+            <ul>
+              <li class="bottmom-space">
+                <a href="mailto:webmaster@example.com">info@devstudio.com</a>
+              </li>
+              <li class="bottmom-space">
+                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
