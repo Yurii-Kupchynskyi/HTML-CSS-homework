@@ -47,6 +47,12 @@
     padding: 0 15px;
     margin-bottom: 94px;
   }
+header{
+  border-bottom: 1px;
+  border-color: #ECECEC;
+  border-style: solid ;
+}
+
   header .container{
     margin-bottom: 0px;
   }
@@ -110,13 +116,35 @@
   .company-clients .headers{
     font-size: 36px;
   }
+  .development-list .image-inscription{
+    position: absolute;
+
+    bottom: 0;   
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+   
+  }
+  .development-list .headers{ 
+    position: absolute;
+    display: inline-block; 
+    font-size: 14px;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+  }
+  
 
   .development-list{
     display: flex;
     column-gap:30px;
   }
   .development-list .item{
-    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+    flex-basis: calc((100% - 60px) / 4);
   }
 
 
@@ -142,6 +170,20 @@
   }
   .nav-link.active-link a{
     color: var(--link-hover-color);
+   position: relative;
+    
+  }
+  .nav-link.active-link a::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--link-hover-color);
+    bottom: 0px;
+    border-radius: 2px;
+    
+    
   }
  .main-logo a{
   display: block;
@@ -359,8 +401,42 @@ border-radius: 0px 0px 4px 4px;
   gap:30px;
  }
  .works-list>.item{
+  position: relative;
   border: 1px solid #EEEEEE;
   flex-basis: calc((100% - 90px) / 3);
+ }
+
+ .works-list>.item:hover .caption{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+   0px 4px 4px rgba(0, 0, 0, 0.06),
+   1px 4px 6px rgba(0, 0, 0, 0.16);
+   cursor: grab;
+ }
+
+ .works-list .hover-block{
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:0;
+  left: 0;
+  height: 294px;
+  width: 100%;
+  background-color: rgb(33, 150, 243,0.9);
+  
+  
+ }
+ .works-list .hover-block .item-transcription{
+  outline: green 0px solid;
+  width: 322px;
+ color: #fff;
+ font-size: 18px;
+ line-height: 1.6;
+ /* text-align: justify; */
+ }
+ .works-list>.item :hover .hover-block{
+ opacity: 1;
  }
 
  .main-button{
@@ -450,8 +526,8 @@ footer .social-network-list .social-network-item a:hover{
   fill: var(--normal-icon-color);
 }
 .company-clients-list .item a{
- padding: 16px 32px;
   display: block;
+  padding: 16px 32px;
   height: 92px;
   fill: var(--normal-icon-color);
   border: var(--normal-icon-color) 1px solid;
@@ -460,5 +536,40 @@ footer .social-network-list .social-network-item a:hover{
 .company-clients-list .item a:hover{
   border-color: var(--link-hover-color);
   fill: var(--link-hover-color);
-  
+}
+.icon-smartphone .icon{
+  position: relative;
+  top: 2px;
+}
+.icon-envelope .icon{
+  position: relative;
+  top: 2px;
+}
+
+
+.backdrop{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  min-width: 528px;
+  min-height: 581px; 
+  padding: 15px;
+
+  background-color: #fff;
+  border-radius: 4px;
+
+}
+.is-hidden{
+  opacity: 0;
+  pointer-events: none;
 }

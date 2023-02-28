@@ -67,7 +67,9 @@
           для вашого бізнесу
         </h1>
         <br />
-        <button type="button" class="main-button">Замовити послугу</button>
+        <button type="button" data-modal-open class="main-button">
+          Замовити послугу
+        </button>
       </div>
 
       <!-- Переваги компанії -->
@@ -117,6 +119,9 @@
                 alt="Проетування задачі"
                 width="370"
               />
+              <div class="image-inscription">
+                <h3 class="headers">Десктопні додатки</h3>
+              </div>
             </li>
             <li class="item">
               <img
@@ -124,6 +129,9 @@
                 alt="Робота над задачею"
                 width="370"
               />
+              <div class="image-inscription">
+                <h3 class="headers">Мобільні додатки</h3>
+              </div>
             </li>
             <li class="item">
               <img
@@ -131,6 +139,9 @@
                 alt="Тестування задачі"
                 width="370"
               />
+              <div class="image-inscription">
+                <h3 class="headers">Дизайнерські рішення</h3>
+              </div>
             </li>
           </ul>
         </section>
@@ -428,28 +439,28 @@
           <ul class="social-network-list">
             <li class="social-network-item">
               <a href="https://www.instagram.com/">
-                <svg class="icon" width="20" height="20">
+                <svg class="icon" width="20" height="20" aria-label="Instagram">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network-item">
               <a href="https://twitter.com">
-                <svg class="icon" width="20" height="20">
+                <svg class="icon" width="20" height="20" aria-label="Twitter">
                   <use href="./images/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network-item">
               <a href="https://uk-ua.facebook.com">
-                <svg class="icon" width="20" height="20">
+                <svg class="icon" width="20" height="20" aria-label="Facebook">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-network-item">
               <a href="https://www.linkedin.com">
-                <svg class="icon" width="20" height="20">
+                <svg class="icon" width="20" height="20" aria-label="Linkedin">
                   <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -458,5 +469,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close>Закрити</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
