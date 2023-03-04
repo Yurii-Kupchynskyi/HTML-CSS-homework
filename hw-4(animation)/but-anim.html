@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/common.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .contetnt-box {
+        outline: 0px dotted violet;
+        margin-top: 100px;
+      }
+      .button {
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        border: 3px rgb(255, 255, 255) solid;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 15px 30px;
+
+        transition: background-color 250ms linear, color 250ms linear 250ms,
+          border 250ms linear 250ms;
+        background-color: rgb(106, 202, 235);
+        border-radius: 6px;
+      }
+      .button::before,
+      .button::after {
+        content: "";
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-size: contain;
+        transition: transform 250ms linear;
+      }
+
+      .button::before {
+        margin-right: 15px;
+
+        background-image: url("./images/clock.svg");
+      }
+      .button::after {
+        position: absolute;
+        background-image: url(./images/diagram.svg);
+
+        top: 50%;
+        left: 30px;
+        transform: translateY(calc(-50% + 50px));
+      }
+      .text-into {
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .button:hover {
+        color: cornsilk;
+        background-color: rgb(21, 107, 139);
+        border: 3px black solid;
+      }
+
+      .button:hover::before {
+        transform: translateY(-50px);
+      }
+      .button:hover::after {
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="contetnt-box">
+      <button type="button" class="button">
+        <span class="text-into">Sign up</span>
+      </button>
+    </div>
+  </body>
+</html>

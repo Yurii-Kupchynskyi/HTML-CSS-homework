@@ -166,6 +166,8 @@ header{
     font-size: 14px;
     line-height: 1.3;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
   }
   .nav-link.active-link a{
@@ -232,6 +234,8 @@ align-items: center;
     line-height: 1.3;
     letter-spacing: 0.02em;
     fill:var(--standart-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contacts-list .icon{
     margin-right: 10px;
@@ -327,6 +331,8 @@ border-radius: 0px 0px 4px 4px;
   fill: var(--normal-icon-color);
   padding: 12px;
   border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-network-list .social-network-item a:hover{
   background-color: var(--link-hover-color);
@@ -372,6 +378,9 @@ border-radius: 0px 0px 4px 4px;
  .buttons-list .unactive-button {
   background-color: var(--button-background-color);
   color: var(--headers-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
  }
  .buttons-list .unactive-button:hover,
@@ -404,16 +413,20 @@ border-radius: 0px 0px 4px 4px;
   position: relative;
   border: 1px solid #EEEEEE;
   flex-basis: calc((100% - 90px) / 3);
+  overflow: hidden;
+ 
  }
+ 
 
  .works-list>.item:hover .caption{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06),
    1px 4px 6px rgba(0, 0, 0, 0.16);
-   cursor: grab;
+   /* cursor: grab; */
  }
 
  .works-list .hover-block{
+  /* Пофіксити назад */
   opacity: 0;
   position: absolute;
   display: flex;
@@ -424,8 +437,11 @@ border-radius: 0px 0px 4px 4px;
   height: 294px;
   width: 100%;
   background-color: rgb(33, 150, 243,0.9);
-  
-  
+  transform: translateY(100%);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+ 
+    
  }
  .works-list .hover-block .item-transcription{
   outline: green 0px solid;
@@ -433,9 +449,12 @@ border-radius: 0px 0px 4px 4px;
  color: #fff;
  font-size: 18px;
  line-height: 1.6;
+ 
+
  /* text-align: justify; */
  }
- .works-list>.item :hover .hover-block{
+ .works-list>.item:hover .hover-block{ 
+ transform: translateY(0px);
  opacity: 1;
  }
 
@@ -532,6 +551,8 @@ footer .social-network-list .social-network-item a:hover{
   fill: var(--normal-icon-color);
   border: var(--normal-icon-color) 1px solid;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-clients-list .item a:hover{
   border-color: var(--link-hover-color);
@@ -554,12 +575,17 @@ footer .social-network-list .social-network-item a:hover{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modal{
+  transform:translate(-50%,-50%) scale(0.8);
 }
 .modal{
   position: absolute;
   top:50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%) scale(1);
 
   min-width: 528px;
   min-height: 581px; 
@@ -567,6 +593,7 @@ footer .social-network-list .social-network-item a:hover{
 
   background-color: #fff;
   border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .is-hidden{
